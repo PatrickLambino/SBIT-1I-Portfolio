@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    animation: transitionIn 0.75s;
+}
+@keyframes transitionIn
+{
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.container
+{
+    height: 100vh;
+    width: 100%;
+    background-image: url(images/background.png);
+    background-position: center;
+    background-size: cover;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.navbar
+{
+    width: 100%;
+    height: 15vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.logo
+{
+    width: 250px;
+    cursor: pointer;
+}
+nav
+{
+    flex: 1;
+    padding-left: 400px;
+    font-family: "Poppins";
+    font-weight: 300;
+}
+nav ul li:hover
+{
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.4); 
+    background-color: #B8F1B0;
+    padding: 0px 10px;
+    border-radius: 50px;
+}
+
+nav ul li
+{
+    display: inline-block;
+    list-style: none;
+    margin: 0px 20px;
+    transition: .2s;
+}
+nav ul li a
+{
+    text-decoration: none;
+    color: #fff;
+}
+.contact
+{
+    position: relative;
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    font-family: 'Poppins';
+}
+.contact .content
+{
+    max-width: 800px;
+}
+.contact .content h2
+{
+    font-size: 50px;
+    font-weight: 700;
+    color: #E3FCBF;
+    margin-left: 15%;
+}
+.container1
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.container1 .contactInfo
+{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.container1 .contactInfo .box
+{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.container1 .contactInfo .box .icon
+{
+    min-width: 60px;
+    height: 60px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    font-size: 22px;
+    color: #0b7c5a;
+}
+.container1 .contactInfo .box .text
+{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #E3FCBF;
+    flex-direction: column;
+    font-weight: 200;
+}
+.container1 .contactInfo .box .text h3
+{
+    font-weight: 600;
+    color: #E3FCBF;
+}
+.container1 .contactInfo .box .text p
+{
+    font-weight: 500;
+    color: #E3FCBF;
+}
+.contactForm
+{
+    width: 40%;
+    height: 350px;
+    padding: 40px;
+    background-color: #ffffff;
+    margin-right: 10%;
+    border-radius: 40px;
+}
+.contactForm h2
+{
+    font-size: 30px;
+    color: #303030;
+    font-weight: 600;
+}
+.contactForm .inputBox
+{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+    font-family: "Poppins";
+    font-weight: 400;
+}
+.contactForm .inputBox input,
+.contactForm .inputBox textarea
+{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #303030;
+    outline: none;
+    resize: none;
+}
+.contactForm .inputBox span
+{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: .5s;
+    color: #666;
+}
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span
+{
+    color: #042208;
+    font-size: 13px;
+    transform: translateY(-20px);
+}
+.contactForm .inputBox input[type=submit]
+{
+    width: 150px;
+    background: linear-gradient(45deg, #B8F1B0, #E3FCBF);
+    color: #0b7c5a;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 18px;
+}
+.social
+{
+    margin-top: 10%;
+}
+.social i
+{
+    color: #0b7c5a;
+    font-size: 40px;
+    padding: 0px 10px;
+}
+.social i:hover
+{
+    -ms-transform: scale(1.5); 
+    -webkit-transform: scale(1.5);
+    transform: scale(1.3);
+    transition: .2s;
+    color: #f7e92d;
+}

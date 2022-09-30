@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    animation: transitionIn 0.75s;
+}
+@keyframes transitionIn
+{
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.container
+{
+    height: 110vh;
+    width: 100%;
+    background-color: #6fc494;
+    background-position: center;
+    background-size: cover;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.navbar
+{
+    width: 100%;
+    height: 15vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.logo
+{
+    width: 250px;
+    cursor: pointer;
+}
+nav
+{
+    flex: 1;
+    padding-left: 400px;
+    font-family: "Poppins";
+    font-weight: 300;
+}
+nav ul li:hover
+{
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.4); 
+  background-color: #B8F1B0;
+  padding: 0px 10px;
+  border-radius: 50px;
+}
+
+nav ul li
+{
+    display: inline-block;
+    list-style: none;
+    margin: 0px 20px;
+    transition: .2s;
+}
+nav ul li a
+{
+    text-decoration: none;
+    color: #fff;
+}
+*
+  
+  .main {
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  h1 {
+    font-size: 50px;
+    word-break: break-all;
+    font-family: "Poppins";
+    font-weight: 700;
+    color: #E3FCBF;
+  }
+  .social i
+{
+    color: #0b7c5a;
+    font-size: 30px;
+    padding: 0px 10px;
+}
+.social i:hover
+{
+    -ms-transform: scale(1.5); 
+    -webkit-transform: scale(1.5);
+    transform: scale(1.3);
+    transition: .2s;
+    color: #f7e92d;
+}
+  .row {
+    margin: 8px -16px;
+  }
+  
+  /* Add padding BETWEEN each column (if you want) */
+  .row,
+  .row > .column {
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  /* Create four equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 23%;
+    position: center;
+    transition: .2s;
+  }
+  .column:hover
+  {
+  -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.3); 
+  }
+  .content {
+    color: #E3FCBF;
+    background-color: #0e7757;
+    padding: 10px;
+    font-family: "Poppins";
+    font-weight: 200;
+  }
+  

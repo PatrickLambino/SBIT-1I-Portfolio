@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    animation: transitionIn 0.75s;
+
+}
+@keyframes transitionIn
+{
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.container
+{
+    height: 100vh;
+    width: 100%;
+    background-image: url(images/background.png);
+    background-position: center;
+    background-size: cover;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.navbar
+{
+    width: 100%;
+    height: 15vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.logo
+{
+    width: 250px;
+    cursor: pointer;
+}
+nav
+{
+    flex: 1;
+    padding-left: 400px;
+    font-family: "Poppins";
+    font-weight: 300;
+}
+nav ul li:hover
+{
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.4); 
+    background-color: #B8F1B0;
+    padding: 0px 10px;
+    border-radius: 50px;
+}
+
+nav ul li
+{
+    display: inline-block;
+    list-style: none;
+    margin: 0px 20px;
+    transition: .2s;
+}
+nav ul li a
+{
+    text-decoration: none;
+    color: #fff;
+}
+.content h1
+{
+    font-size: 60px;
+    font-weight: 100;
+    font-family: "Poppins";
+    font-weight: 700;
+    margin-top: 24px;
+    margin-bottom: 15px;
+    color: #E3FCBF;
+}
+.content p
+{
+    font-size: 20px;
+    font-family: "Poppins";
+    font-weight: 400;
+    color: #E3FCBF;
+}
+.content
+{
+    margin-left: 5%;
+    margin-top: 5%;
+}
+.content .btn
+{
+    display: inline-block;
+    background: linear-gradient(45deg, #B8F1B0, #E3FCBF);
+    border-radius: 30px;
+    padding: 15px 30px;
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 20px;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #0b7c5a;
+    box-shadow: 3px 8px 22px rgba(94,28,68,0.15);
+    margin-top: 8%;
+    margin-left: 8%;
+    transition: transform .2s;
+}
+.content .btn:hover
+{
+    -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.2); 
+}
+.social
+{
+    margin-top: 17%;
+    margin-left: 4%;
+}
+.social i
+{
+    color: #0b7c5a;
+    font-size: 40px;
+    padding: 0px 10px;
+}
+.social i:hover
+{
+    -ms-transform: scale(1.5); 
+    -webkit-transform: scale(1.5);
+    transform: scale(1.3);
+    transition: .2s;
+    color: #f7e92d;
+}
